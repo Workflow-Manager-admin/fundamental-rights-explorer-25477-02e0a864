@@ -5,9 +5,10 @@ import fundamentalRights from "../fundamentalRightsData";
 /**
  * FundamentalRightsList
  * Displays a vertical, clickable list of all Fundamental Rights using titles from data.
- * No navigation is implemented at this stage.
+ * Props:
+ *   onSelectRight: function(index) - called when a right is selected (for navigation)
  */
-function FundamentalRightsList() {
+function FundamentalRightsList({ onSelectRight }) {
   return (
     <div className="fr-list-container" style={{
       width: "100%",
@@ -54,7 +55,7 @@ function FundamentalRightsList() {
               border: "none",
               outline: "none"
             }}
-            // No click handler for navigation yet
+            onClick={onSelectRight ? () => onSelectRight(idx) : undefined}
             tabIndex={0}
             aria-label={`View details for ${right.title}`}
           >
