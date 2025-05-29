@@ -10,26 +10,32 @@ import fundamentalRights from "../fundamentalRightsData";
  */
 function FundamentalRightsList({ onSelectRight }) {
   return (
-    <div className="fr-list-container" style={{
-      width: "100%",
-      maxWidth: 600,
-      margin: "48px auto 0 auto",
-      padding: "32px 0",
-      background: "var(--secondary, #fff)",
-      borderRadius: 16,
-      boxShadow: "0 2px 16px rgba(25, 118, 210, 0.07)",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center"
-    }}>
-      <h2 style={{
-        color: "var(--primary, #1976D2)",
-        marginBottom: 32,
-        textAlign: "center",
-        fontWeight: 700,
-        fontSize: "2.2rem",
-        letterSpacing: "-1.1px"
-      }}>
+    <div
+      className="fr-list-container"
+      style={{
+        width: "100%",
+        maxWidth: 600,
+        margin: "48px auto 0 auto",
+        padding: "32px 0",
+        background: "var(--secondary)",
+        borderRadius: 16,
+        boxShadow: "var(--btn-shadow)",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        border: "1.2px solid var(--border-color)"
+      }}
+    >
+      <h2
+        style={{
+          color: "var(--primary)",
+          marginBottom: 32,
+          textAlign: "center",
+          fontWeight: 800,
+          fontSize: "2.15rem",
+          letterSpacing: "-1.1px"
+        }}
+      >
         Explore Fundamental Rights
       </h2>
       <div style={{ width: "100%" }}>
@@ -42,18 +48,18 @@ function FundamentalRightsList({ onSelectRight }) {
               display: "block",
               width: "100%",
               textAlign: "left",
-              background: "var(--primary, #1976D2)",
-              color: "#fff",
-              fontSize: "1.25rem",
-              fontWeight: 500,
+              background: "var(--primary)",
+              color: "var(--primary-contrast)",
+              fontSize: "1.18rem",
+              fontWeight: 600,
               marginBottom: 16,
               borderRadius: 8,
               padding: "18px 24px",
-              boxShadow: "0 2px 8px rgba(25, 118, 210, 0.09)",
-              transition: "background 0.18s",
+              boxShadow: "0 2px 7px rgba(25,118,210,0.08)",
+              transition: "background 0.16s, color 0.16s",
               cursor: "pointer",
-              border: "none",
-              outline: "none"
+              outline: "none",
+              border: "none"
             }}
             onClick={onSelectRight ? () => onSelectRight(idx) : undefined}
             tabIndex={0}
