@@ -1,9 +1,22 @@
 :root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  /* Themed palette for Fundamental Rights Explorer Light Theme */
+  --primary: #1976D2;
+  --secondary: #FFFFFF;
+  --accent: #FFC107;
+  --primary-contrast: #fff;
+  --secondary-contrast: #222;
+  --accent-contrast: #222;
+  --surface: #F4F6FA;
+  --surface-contrast: #141414;
+  --border-color: #e1e5ef;
+  --focus-color: #124796;
+  --btn-shadow: 0 2px 16px rgba(25, 118, 210, 0.07);
+
+  /* Text */
+  --text-primary: #232323;
+  --text-secondary: #4A4A4A;
+  --text-on-primary: #FFF;
+  --text-on-secondary: #222;
 }
 
 body {
