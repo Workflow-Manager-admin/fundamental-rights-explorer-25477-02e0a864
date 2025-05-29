@@ -24,34 +24,38 @@ function RightDetail({ right, onBack }) {
       style={{
         maxWidth: 600,
         margin: "48px auto 0 auto",
-        background: "var(--secondary, #fff)",
+        background: "var(--secondary)",
         borderRadius: 16,
-        boxShadow: "0 2px 16px rgba(25, 118, 210, 0.09)",
+        boxShadow: "var(--btn-shadow)",
         padding: "32px 24px 40px 24px",
-        color: "#131313"
+        color: "var(--text-primary)",
+        border: "1.2px solid var(--border-color)",
+        fontSize: "1.04rem"
       }}
     >
       <button
         className="btn"
         style={{
-          background: "var(--primary, #1976D2)",
-          color: "#fff",
+          background: "var(--primary)",
+          color: "var(--primary-contrast)",
           marginBottom: 24,
           padding: "10px 22px",
           borderRadius: 6,
-          fontWeight: 500,
+          fontWeight: 500
         }}
         onClick={onBack}
         aria-label="Back to Fundamental Rights List"
       >
         ← Back
       </button>
-      <h2 style={{
-        color: "var(--primary, #1976D2)",
-        fontWeight: 700,
-        fontSize: "2rem",
-        marginBottom: 16
-      }}>
+      <h2
+        style={{
+          color: "var(--primary)",
+          fontWeight: 700,
+          fontSize: "2rem",
+          marginBottom: 16
+        }}
+      >
         {right.title}
       </h2>
       <div style={{ marginBottom: 24 }}>
@@ -59,8 +63,8 @@ function RightDetail({ right, onBack }) {
           style={{
             fontWeight: 600,
             marginBottom: 6,
-            color: "#374151",
-            fontSize: "1.07rem",
+            color: "var(--secondary-contrast)",
+            fontSize: "1.07rem"
           }}
         >
           What it means
@@ -69,8 +73,8 @@ function RightDetail({ right, onBack }) {
           style={{
             lineHeight: 1.6,
             fontSize: "1.06rem",
-            color: "#232323",
-            background: "#f7faff",
+            color: "var(--text-primary)",
+            background: "var(--surface)",
             borderRadius: 7,
             padding: "14px 13px 12px 14px",
             marginBottom: 4
@@ -84,8 +88,8 @@ function RightDetail({ right, onBack }) {
           style={{
             fontWeight: 600,
             marginBottom: 6,
-            color: "#374151",
-            fontSize: "1.07rem",
+            color: "var(--secondary-contrast)",
+            fontSize: "1.07rem"
           }}
         >
           Real-life Example
@@ -94,10 +98,10 @@ function RightDetail({ right, onBack }) {
           style={{
             lineHeight: 1.45,
             fontSize: "1.04rem",
-            background: "#ffeabb",
-            color: "#ad6002",
+            background: "var(--accent)",
+            color: "var(--accent-contrast)",
             borderRadius: 6,
-            padding: "12px 13px 11px 14px",
+            padding: "12px 13px 11px 14px"
           }}
         >
           {right.example}
